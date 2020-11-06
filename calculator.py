@@ -18,11 +18,17 @@ class Calculator:
 
     # Create a function to do division (/)
     def divide(self, num1, num2):
-        return num1 / num2
+        if num2 == 0:
+            return "Please don't try and divide by zero"
+        else:
+            return num1 / num2
 
     # Create a function to do modulo division (%)
     def modulo(self, num1, num2):
-        return num1 % num2
+        if num2 == 0:
+            return "Please don't try and divide by zero"
+        else:
+            return num1 % num2
 
     # Create a function to do exponentials (^)
     def exponent(self, num1, num2):
@@ -34,3 +40,10 @@ class Calculator:
 
 calc = Calculator()
 print(calc.add(7, 9))
+print(calc.subtract(8, 54))
+print(calc.multiply(4, 16))
+print(calc.divide(80, 0))
+print(calc.divide(80, 5))
+print(calc.modulo(90, 8))
+print(calc.modulo(70, 0))
+print(calc.exponent(5, 4))
