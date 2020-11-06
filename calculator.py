@@ -50,7 +50,7 @@ class Calculator:
 
     # Create a function to convert a provided value in inches to cm
     def inch_to_cm(self, num_of_inches):
-        return num_of_inches * 2.54
+        return self.multiply(num_of_inches, 2.54)
 
 
 # Creating an object of our Calculator class and testing that the output for the class methods is correct
